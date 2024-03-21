@@ -69,7 +69,7 @@ header {
 }
 
 img {
-    width: 60px;
+    width: 61px;
     margin-top: 5px;
 }
 
@@ -257,15 +257,10 @@ h1 {
     font-size: 0.9em;
 }
 
-.conteneur-hebergement i {
-    display: block-inline;
-    flex-direction: row;
-}
-
 
 .carte-hebergement {
-    height: 210px;
-    width: 250px;
+    height: 207.25px;
+    width: 250.33px;
     margin-top: 30px; 
     border: 1px solid white;
     border-radius: 20px 20px 20px 20px;
@@ -369,8 +364,8 @@ h1 {
 }
 
 .carte-activites {
-    width: 23%;
-    height: 425px;
+    width: 297.5px;
+    height: 439px;
     background-color: white;
     border-radius: 20px;
     padding: 0;
@@ -379,10 +374,34 @@ h1 {
 }
 
 .carte-activites h3 {
-    padding-top: 5px;
+    padding-top: 10px;
     margin-left: 20px;
 }
-    
+
+        /******Footer******/
+
+footer {
+    display: flex;
+    padding-top: 50px;
+}
+
+footer div {
+    width: 33%;
+    background-color: #F2F2F2;
+}
+
+footer h3 {
+    margin-left: 20px;
+}
+
+footer ul {
+    list-style: none;
+    margin-left: -20px;
+}
+
+footer li {
+    margin-bottom: 20px;
+}
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
