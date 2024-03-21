@@ -17,6 +17,7 @@
 body {
     display: flex;
     justify-content: center;
+    margin-top: 0;
 }
 
 .main-container {
@@ -61,15 +62,15 @@ a {
 
 /****** Header *****/
 
-nav {
+header {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-nav img {
+img {
     width: 60px;
-    height: 19px;
+    margin-top: 5px;
 }
 
 nav ul {
@@ -80,6 +81,9 @@ nav ul {
 
 nav li {
     margin-right: 40px;
+    border-top: 3px solid white;
+    padding-top: 10px;
+    margin-top: -5px;
 }
 
 nav li:hover {
@@ -98,11 +102,13 @@ nav li:hover {
 
 .recherche {
     padding-bottom: 20px;
+    padding-top: 20px;
 
 }
 
 .conteneur {
     padding-bottom: 20px;
+    padding-top: 10px;
 }
 
 h1 {
@@ -113,6 +119,7 @@ h1 {
     position: relative;
     bottom: 9px;
     font-size: 0.9em;
+    margin-left: 0;
 }
 
 .formulaire {
@@ -128,6 +135,9 @@ h1 {
     border-radius: 10px 0 0 10px;
     background-color: #F2F2F2;
     padding: 10px;
+    margin-left: 0;
+    position: relative;
+    top: 1px;
 
 }
 
@@ -136,7 +146,7 @@ h1 {
     border-color: #F2F2F2;
     border-right: none;
     padding: 10px;
-    margin-left: -4px;
+    margin-left: -5px;
     margin-right: -4px;
 }
 
@@ -159,6 +169,7 @@ h1 {
 
 .filtres p {
     margin-right: 10px;
+    margin-left: 0;
 }
 
 .filtres div {
@@ -186,7 +197,11 @@ h1 {
 .icone-info {
     border: 2px solid #F2F2F2;
     border-radius: 50%;
-    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 4px;
+    padding-bottom: 7px;
+    margin-left: 0;
     
 }
 
@@ -267,6 +282,10 @@ h1 {
 
 .description-hotel h3, p, i {
     margin-left: 20px;
+}
+
+.etoiles {
+    margin-left: 0;
 }
 
 .afficher-plus {
