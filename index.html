@@ -20,7 +20,7 @@
             <a href="#"><img src="./images/logo/Booki.png" alt="Logo de Booki"></a>
             <nav>
                 <ul>
-                    <li><a href="#Hebergements">Hébergement</a></li> <!--DEMANDER COMMENT METTRE BARRE DU HAUT-->
+                    <li><a href="#Hebergements">Hébergements</a></li> <!--DEMANDER COMMENT METTRE BARRE DU HAUT-->
                     <li><a href="#Activites">Activités</a></li>
                 </ul>
             </nav>
@@ -37,10 +37,13 @@
                     <p class="sous-texte-recherche">En plein centre-ville ou en pleine nature</p>
                 </div>
                 <div class="conteneur">
-                    <form method="get" action="#" class="formulaire"> <!--DEMANDER POUR COMMENT FAIRE LA TAILLE 377x49-->
+                    <form method="get" action="#" class="formulaire">
                         <i class="fa-solid fa-location-dot icone-formulaire"></i>
                         <input type="text" name="rechercher" id="rechercher" class="texte-formulaire" placeholder="Marseille, France"> <!--DEMANDER COMMENT LE TEXTE DOIT APPARAITRE EN GRAS-->
                         <input type="submit" value="Rechercher" class="rechercher-formulaire"> <!--COMMENT INTEGRER LOUPE ET LE MOT RECHERCHER-->
+                        <button type="submit" class="bouton-rechercher">
+                            <i class="fa-solid fa-magnifying-glass icone-rechercher"></i>
+                        </button>
                     </form>
                 </div>
                 <div class="filtres conteneur">
@@ -78,11 +81,11 @@
                     <div class="conteneur-carte">
                         <div class="conteneur-hebergement">
                             <a href="#">
-                                <article class="card carte-hebergement"> <!--PAREIL QUE LA CARD PLUS BAS MARGE A DROITE QUE JARRIVE PAS A RECTIFIER-->
+                                <article class="card carte-hebergement">
                                     <img src="./images/hebergements/fred-kleber-min.jpg" alt="Photo d'une chambre de l'hotel du port" class="photo-hotel">
                                     <div class="description-hotel">
                                         <div class="card-content">
-                                            <h3>Hôtel du port</h3> <!--DEMANDER COMMENT SERRER LE BORD A GAUCHE-->
+                                            <h3>Hôtel du port</h3>
                                             <p>Nuit à partir de 52€</p>
                                         </div>
                                         <div>
@@ -267,29 +270,37 @@
             </div>
             <section class="activites-marseille">
                 <h2>Activités à Marseille</h2>
-                <div class="activites" id="Activites"> <!--DEMANDER POURQUOI MARGE BLANCHE, DEJA MIS MARGIN MAIS CA NE MARCHAIT PAS A DROITE-->
+                <div class="activites" id="Activites">
                     <article class="carte-activites">
                         <a href="#">
                         <img src="./images/activites/reno-laithienne.jpg" alt="Photo du Vieux-Port">
-                        <h3>Vieux-Port</h3>
+                        <div class="destination-activites-un">
+                            <h3>Vieux-Port</h3>
+                        </div>
                         </a>
                     </article>                                    
                     <article  class="carte-activites">
                         <a href="#">
                         <img src="./images/activites/paul-hermann.jpg" alt="Photo du Fort de Pomègues">
-                        <h3>Fort de Pomègues</h3>
+                        <div class="destination-activites-un" >
+                            <h3>Fort de Pomègues</h3>
+                        </div>
                         </a>
                     </article>                                        
                     <article class="carte-activites">
                         <a href="#">                                            
                         <img src="./images/activites/kilyan-sockalingum.jpg" alt="Photo du Parc National des Calanques">
-                        <h3>Parc national des Calanques</h3>
+                        <div class="destination-activites-deux">
+                            <h3>Parc national des Calanques</h3>
+                        </div>
                         </a>
                     </article>                 
                     <article class="carte-activites">  
                         <a href="#">  
                         <img src="./images/activites/florian-wehde.jpg" alt="Photo de Notres-Dame-de-la-Garde">
-                        <h3>Notre-Dame-de-la-Garde</h3>
+                        <div class="destination-activites-deux">
+                            <h3>Notre-Dame-de-la-Garde</h3>
+                        </div>
                         </a>
                     </article>                    
                 </div>
