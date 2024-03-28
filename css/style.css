@@ -275,6 +275,7 @@ h1 h2 {
 
 
 .carte-hebergement {
+    width: 95%;
     height: 207px;
     border: 1px solid white;
     border-radius: 20px 20px 20px 20px;
@@ -398,12 +399,13 @@ h1 h2 {
 
 .carte-activites h3 {
     align-content: center;
-    margin-left: 20px;
+    margin-left: 10px;
 }
 
 .destination-activites {
     display: flex;
     height: 80px;
+    align-items: center;
 }
 
         /******Footer******/
@@ -438,6 +440,9 @@ footer li {
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
 
+
+    /*****Recherche-filtres***/
+
     .filtres {
         flex-direction: column;
         align-items: flex-start;
@@ -450,6 +455,10 @@ footer li {
     .conteneur {
         padding-bottom: 0;
     }
+
+    /****Hébergements et Populaires****/
+
+
     .hebergements-and-populaires {
         flex-direction: column;
     }
@@ -481,6 +490,8 @@ footer li {
         font-size: 13px;
     }
 
+    /****Activités*****/
+
     .carte-activites {
         height: 270px;
     }
@@ -495,9 +506,8 @@ footer li {
 
     .destination-activites {
         height: 62px;
+        align-items: center;
     }
-    
-
 
     .activites img {
         object-fit: cover;
@@ -507,6 +517,8 @@ footer li {
 }
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
+
+    /****Header****/
 
     header {
         display: flex;
@@ -518,7 +530,6 @@ footer li {
         width: 100%;
         display: flex;
         justify-content: center;
-        padding: 5px;
     }
 
     header img {
@@ -526,6 +537,7 @@ footer li {
     }
     nav {
         width: 100%;
+        margin-top: 20px;
     }
 
     nav ul {
@@ -544,6 +556,7 @@ footer li {
         width: 50%;
         border-bottom: 3px solid #F2F2F2;
         padding-bottom: 15px;
+        border-top: none;
         
     }
     nav li:hover {
@@ -551,8 +564,11 @@ footer li {
         border-bottom: 3px solid #0065FC;
         border-top: none;
         padding-bottom: 15px;
+        padding-top: 0;
     }
 
+
+    /****Recherche et filtres****/
     
     body {
         margin: 0;
@@ -647,6 +663,9 @@ footer li {
         height: 1em;
     }
 
+
+    /****Hébergements et Populaires****/
+
     .hebergements-and-populaires {
         flex-direction: column-reverse;
     }
@@ -697,6 +716,8 @@ footer li {
         width: 100%;
     }
 
+    /****Activités****/
+
     .activites-marseille {
         padding-top: 50px;
     }
@@ -722,6 +743,8 @@ footer li {
     .destination-activites {
         height: 52px;
     }
+
+    /*****Footer****/
 
     footer {
         flex-direction: column;
