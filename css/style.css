@@ -17,7 +17,7 @@
 body {
     display: flex;
     justify-content: center;
-    margin-top: 0;
+    margin: 0;
 }
 
 .main-container {
@@ -111,8 +111,11 @@ nav li:hover {
 }
 
 .conteneur {
-    padding-bottom: 20px;
-    padding-top: 5px;
+    padding: 10px 0;
+}
+
+h1 {
+    margin-bottom: 5px;
 }
 
 h1 h2 {
@@ -120,10 +123,9 @@ h1 h2 {
 }
 
 .sous-texte-recherche {
-    position: relative;
-    bottom: 9px;
     font-size: 0.9em;
     margin-left: 0;
+    margin-top: 0;
 }
 
 .formulaire {
@@ -134,8 +136,7 @@ h1 h2 {
 
 .icone-formulaire {
     color: black;
-    border: 1px solid transparent;
-    border-color: #F2F2F2;
+    border: 1px solid #F2F2F2;
     border-radius: 10px 0 0 10px;
     background-color: #F2F2F2;
     padding: 15px;
@@ -147,15 +148,19 @@ h1 h2 {
 }
 
 .texte-formulaire {
-    border: 1px solid transparent;
-    border-color: #F2F2F2;
+    border: 1px solid #F2F2F2;
+    outline: none;
     border-right: none;
     padding: 10px;
+    text-align: center;
+    font-weight: 700;
 }
 
+.texte-formulaire:active {
+    border: none;
+}
 .rechercher-formulaire {
-    border: 1px solid transparent;
-    border-color: #0065FC;
+    border: 1px solid #0065FC;
     border-radius: 0 10px 10px 0px;
     background-color: #0065FC;
     color: white;
@@ -176,8 +181,10 @@ h1 h2 {
     font-weight: bold;
 }
 
-.filtres div {
-    display: flex;
+.filtres-responsive {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 15px;
 }
 
 .filtres a {
@@ -186,8 +193,7 @@ h1 h2 {
 
 .bouton-filtres {
     padding: 10px 8px 10px 18px;
-    margin-right: 8px;
-    border: 3px solid #F2F2F2;
+    border: 2px solid #F2F2F2;
     border-radius: 30px;
     background-color: white;
 }
@@ -365,13 +371,13 @@ h1 h2 {
 
 .activites-marseille {
     padding-top: 50px;
-    width: 100%;
+    margin: 0 30px;
 }
 
 .activites {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    justify-items: center;
+    gap: 30px;
 }
 
 .activites-marseille h2 {
@@ -383,23 +389,17 @@ h1 h2 {
     height: 350px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
-    margin-top: 0;
     object-fit: cover;
 }
 
 .carte-activites {
-    width: 95%;
     height: 439px;
-    background-color: white;
     border-radius: 20px;
-    padding: 0;
-    object-fit: cover;
     box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
 }
 
 .carte-activites h3 {
-    align-content: center;
-    margin-left: 10px;
+    margin: 0 15px;
 }
 
 .destination-activites {
@@ -421,8 +421,9 @@ footer div {
     background-color: #F2F2F2;
 }
 
-footer h3 {
-    margin-left: 20px;
+footer h2 {
+    padding-left: 20px;
+    font-size: 18px;
 }
 
 footer ul {
@@ -497,8 +498,6 @@ footer li {
     }
 
     .carte-activites h3 {
-        margin: 0;
-        padding: 0;
         font-weight: bold;
         margin-left: 10px;
         font-size: 16px;
@@ -506,11 +505,9 @@ footer li {
 
     .destination-activites {
         height: 62px;
-        align-items: center;
     }
 
     .activites img {
-        object-fit: cover;
         height: 200px;
     }
 
@@ -548,9 +545,6 @@ footer li {
     }
     
     nav li {
-        display: flex;
-        justify-content: center;
-        align-items: center;
         margin: 0;
         padding: 0;
         width: 50%;
@@ -582,12 +576,9 @@ footer li {
         padding: 0px 20px 0px 20px;
     }
 
-    .formulaire {
-        width: 100%;
-    }
-
     .texte-formulaire {
         width: 53%;
+        text-align: start;
     }
 
     .icone-formulaire, .texte-formulaire, .icone-rechercher{
@@ -605,13 +596,14 @@ footer li {
 
     .conteneur button {
         border: none;
-        background-color: white;
+        background-color: transparent;
         display: inline;
     }
 
     .icone-rechercher {
-        border: 1px solid transparent;
-        border-color: #0065FC;
+        position: relative;
+        right: 18px;
+        border: 1px solid #0065FC;
         border-radius: 13px 13px 13px 13px;
         box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);
         background-color: #0065FC;
@@ -622,26 +614,20 @@ footer li {
     }
   
     .filtres-responsive {
-        display: flex;
-        flex-direction: row;
+        display: grid;
+        grid-template-columns: auto auto;
         gap: 15px;
     }
 
     .conteneur-responsive {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
         width: 100%;
-        gap: 20px;
     }
 
     .texte-filtre {
         font-size: 14px;
-        white-space: nowrap;
     }
 
     .bouton-filtres {
-        width: 50%;
         margin-right: 0;
     }
 
@@ -659,7 +645,6 @@ footer li {
     }
 
     .icone-info {
-        width: 2%;
         height: 1em;
     }
 
@@ -719,12 +704,10 @@ footer li {
     /****Activités****/
 
     .activites-marseille {
-        padding-top: 50px;
+        padding: 30px;
+        margin: 0;
     }
 
-    .activites-marseille h2 {
-        padding-left: 33px;
-    }
     .activites {
         grid-template-columns: repeat(1, 1fr);
         gap: 15px;
@@ -732,8 +715,7 @@ footer li {
 
     .carte-activites {
         height: 200px;
-        width: 80%;
-        box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
+        width: 100%;
     }
 
     .carte-activites img {
